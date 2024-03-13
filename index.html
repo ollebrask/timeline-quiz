@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Timeline Quiz</h1>
+    <div class="game-area">
+        <div id="question-box">
+            <div id="question">Question</div>
+            <div id="answer-btns">
+                <button class="btn">Before</button>
+                <button class="btn">After</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="btn">Start</button>
+            <button id="next-btn" class="btn hide">Next</button>
+        </div>
+    </div>
+    <div class="score-area">
+        <p class="scores">Correct: <span id="score">0</span></p>
+        <p class="scores">Wrong: <span id="wrong">0</span></p>
+    </div>
+    <div class="timeline">
+        <div class="left-group">
+            <div id="div1" style="display:none">1</div>
+            <div id="div2" style="display:none">2</div>
+            <div id="div3" style="display:none">3</div>
+        </div>
+        <div id="div4">1950</div>
+        <div class="right-group">
+            <div id="div5" style="display:none">5</div>
+            <div id="div6" style="display:none">6</div>
+            <div id="div7" style="display:none">7</div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
