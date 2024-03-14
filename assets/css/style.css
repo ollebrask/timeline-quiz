@@ -18,7 +18,7 @@ body {
 
 .game-area {
     background-color: gray;
-    width: 40%;
+    width: 70%;
     height: 50vh;
 }
 
@@ -49,8 +49,13 @@ body {
     justify-content: space-around;
 }
 
-/*.round img {
+#div4 {
+    font-size: 130%;
+    margin-top: 2%;
+}
+
+.round img {
     border: 1px solid black;
     border-radius: 50%;
-    width: 9%
-}*/
+    width: 50%
+}
