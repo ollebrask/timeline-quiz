@@ -10,6 +10,9 @@ const questionElement = document.getElementById('question');
 let shuffledQuestion;
 let currentQuestion;
 
+//correct year
+const treshold = 1950;
+
 //eventlisteners for clicking buttons
 startButton.addEventListener('click', startQuiz);
 beforeButton.addEventListener('click', selectBefore);
@@ -36,14 +39,36 @@ function showQuestion(question) {
 
 function selectBefore() {
     console.log('Before');
+    if (shuffledQuestion[currentQuestion].correctYear < treshold) {
+        increaseRight();
+    } else {
+        increaseWrong();
+    }
 }
 
 function selectAfter() {
     console.log('After');
+    if (shuffledQuestion[currentQuestion].correctYear > treshold) {
+        increaseRight();
+    } else {
+        increaseWrong();
+    }
 }
 
 function selectNext() {
     console.log('Next');
+}
+
+//Gets current score and increase by 1
+function increaseRight() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
+
+//Gets current wrong score and increase by 1
+function increaseWrong() {
+    let oldScore = parseInt(document.getElementById("wrong").innerText);
+    document.getElementById("wrong").innerText = ++oldScore;
 }
 
 //questions for the quiz
