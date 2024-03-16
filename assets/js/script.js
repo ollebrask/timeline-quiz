@@ -47,6 +47,7 @@ function selectBefore() {
     } else {
         increaseWrong();
     }
+    nextButton.classList.remove('hide');
 }
 
 //Function for after-button
@@ -57,11 +58,19 @@ function selectAfter() {
     } else {
         increaseWrong();
     }
+    nextButton.classList.remove('hide');
 }
 
 //Function for next-button
 function selectNext() {
     console.log('Next');
+    currentQuestion++;
+    if (currentQuestion < shuffledQuestion.length) {
+        nextQuestion();
+        nextButton.classList.add('hide');
+    } else {
+        console.log('End of quiz')
+    }
 }
 
 //Gets current score and increase by 1
