@@ -29,14 +29,17 @@ function startQuiz() {
     nextQuestion();
 }
 
+//Function for shuffle the next question.
 function nextQuestion() {
     showQuestion(shuffledQuestion[currentQuestion]);
 }
 
+//To show the question
 function showQuestion(question) {
     questionElement.innerText = question.question;
 }
 
+//Function for before-button
 function selectBefore() {
     console.log('Before');
     if (shuffledQuestion[currentQuestion].correctYear < treshold) {
@@ -46,6 +49,7 @@ function selectBefore() {
     }
 }
 
+//Function for after-button
 function selectAfter() {
     console.log('After');
     if (shuffledQuestion[currentQuestion].correctYear > treshold) {
@@ -55,6 +59,7 @@ function selectAfter() {
     }
 }
 
+//Function for next-button
 function selectNext() {
     console.log('Next');
 }
