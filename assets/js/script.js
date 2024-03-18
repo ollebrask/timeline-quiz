@@ -5,6 +5,7 @@ const afterButton = document.getElementById('after-btn');
 const nextButton = document.getElementById('next-btn');
 const questionBoxElement = document.getElementById('question-box');
 const questionElement = document.getElementById('question');
+const questionImg = document.getElementById('question-image');
 
 //variables for shuffling questions and keeping track of currentquestion.
 let shuffledQuestion;
@@ -37,6 +38,7 @@ function nextQuestion() {
 //To show the question
 function showQuestion(question) {
     questionElement.innerText = question.question;
+    questionImg.src = question.image;
 }
 
 //Function for before-button
@@ -104,10 +106,12 @@ function revealTimeline(correctYear) {
 //questions for the quiz
 const questionsData = [{
         "question": "The tower blablabla has a big restaurang at the the top, was it invented before or after 1950?",
-        "correctYear": 1991
+        "correctYear": 1991,
+        "image": "assets/images/athletes.webp"
     },
     {
         "question": "The big bang was blablabla, was it before or after 1950?",
-        "correctYear": 1940
+        "correctYear": 1940,
+        "image": "assets/images/athletes.webp"
     }
 ]
