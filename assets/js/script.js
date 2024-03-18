@@ -3,6 +3,7 @@ const startButton = document.getElementById('start-btn');
 const beforeButton = document.getElementById('before-btn');
 const afterButton = document.getElementById('after-btn');
 const nextButton = document.getElementById('next-btn');
+const retryButton = document.getElementById('retry-btn');
 const questionBoxElement = document.getElementById('question-box');
 const questionElement = document.getElementById('question');
 const questionImg = document.getElementById('question-image');
@@ -73,7 +74,9 @@ function selectNext() {
         nextQuestion();
         nextButton.classList.add('hide');
     } else {
-        console.log('End of quiz')
+        console.log('End of quiz');
+        nextButton.classList.add('hide');
+        retryButton.classList.remove('hide');
     }
 }
 
