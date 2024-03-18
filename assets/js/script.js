@@ -47,6 +47,7 @@ function selectBefore() {
     } else {
         increaseWrong();
     }
+    revealTimeline(shuffledQuestion[currentQuestion].correctYear);
     nextButton.classList.remove('hide');
 }
 
@@ -58,6 +59,7 @@ function selectAfter() {
     } else {
         increaseWrong();
     }
+    revealTimeline(shuffledQuestion[currentQuestion].correctYear);
     nextButton.classList.remove('hide');
 }
 
@@ -85,6 +87,20 @@ function increaseWrong() {
     document.getElementById("wrong").innerText = ++oldScore;
 }
 
+//Function for revealing the correct year and picture on timeline.
+function revealTimeline(correctYear) {
+    //select all div in both left and right group.
+    const timelineDivs = document.querySelectorAll('.timeline .left-group div, .timeline .right-group div');
+
+    //search through the divs to match with correct year and remove hide. break when done
+    for (let i = 0; i < timelineDivs.length; i++) {
+        if (parseInt(timelineDivs[i].innerText) === correctYear) {
+            timelineDivs[i].classList.remove('hide');
+            break;
+        }
+    }
+}
+
 //questions for the quiz
 const questionsData = [{
         "question": "The tower blablabla has a big restaurang at the the top, was it invented before or after 1950?",
@@ -92,6 +108,6 @@ const questionsData = [{
     },
     {
         "question": "The big bang was blablabla, was it before or after 1950?",
-        "correctYear": 1946
+        "correctYear": 1940
     }
 ]
