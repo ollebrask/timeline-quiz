@@ -75,9 +75,11 @@ p {
 }
 
 .btn {
-    width: 50px;
+    width: 70px;
+    height: auto;
     background-color: #FFE8D1;
     border: 1px solid #8D6D5B;
+    font-size: 110%;
 }
 
 .btn:hover {
@@ -85,6 +87,13 @@ p {
     cursor: pointer;
 }
 
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
 /* Style for the score-area*/
 .score-area {
     margin: 7px auto;

@@ -49,8 +49,12 @@ function selectBefore() {
     console.log('Before');
     if (shuffledQuestion[currentQuestion].correctYear < treshold) {
         increaseRight();
+        beforeButton.classList.add('correct');
+        afterButton.classList.add('wrong');
     } else {
         increaseWrong();
+        beforeButton.classList.add('wrong');
+        afterButton.classList.add('correct');
     }
     revealTimeline(shuffledQuestion[currentQuestion].correctYear);
     nextButton.classList.remove('hide');
@@ -61,8 +65,12 @@ function selectAfter() {
     console.log('After');
     if (shuffledQuestion[currentQuestion].correctYear > treshold) {
         increaseRight();
+        afterButton.classList.add('correct');
+        beforeButton.classList.add('wrong');
     } else {
         increaseWrong();
+        afterButton.classList.add('wrong');
+        beforeButton.classList.add('correct');
     }
     revealTimeline(shuffledQuestion[currentQuestion].correctYear);
     nextButton.classList.remove('hide');
