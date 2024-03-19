@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1 class="heading">Timeline Quiz</h1>
     <div class="game-area">
@@ -19,6 +21,9 @@
                 <button class="btn" id="after-btn">After</button>
             </div>
         </div>
+        <div class="img-question" id="information">
+            <p>Welcome! In this quiz you will be presented with 6 questions. Your job is to guess if the event happened before or after the year 1950. Are you ready?</p>
+        </div>
         <div class="controls">
             <button id="start-btn" class="btn">Start</button>
             <button id="next-btn" class="btn hide">Next</button>
@@ -31,17 +36,32 @@
     </div>
     <div class="timeline">
         <div class="left-group">
-            <div class="round hide" id="div1"><p>1938</p><img src="assets/images/pen.webp"></div>
-            <div class="round hide" id="div2"><p>1946</p><img src="assets/images/computer.webp"></div>
-            <div class="round hide" id="div3"><p>1948</p><img src="assets/images/lp.webp"></div>
+            <div class="round hide" id="div1">
+                <p>1938</p><img src="assets/images/pen.webp">
+            </div>
+            <div class="round hide" id="div2">
+                <p>1946</p><img src="assets/images/computer.webp">
+            </div>
+            <div class="round hide" id="div3">
+                <p>1948</p><img src="assets/images/lp.webp">
+            </div>
         </div>
-        <div class="threshold"><p>1950</p></div>
+        <div class="threshold">
+            <p>1950</p>
+        </div>
         <div class="right-group">
-            <div class="round hide" id="div5"><p>1959</p><img src="assets/images/beer.webp"></div>
-            <div class="round hide" id="div6"><p>1967</p><img src="assets/images/tower.webp"></div>
-            <div class="round hide" id="div7"><p>1973</p><img src="assets/images/phone.webp"></div>
+            <div class="round hide" id="div5">
+                <p>1959</p><img src="assets/images/beer.webp">
+            </div>
+            <div class="round hide" id="div6">
+                <p>1967</p><img src="assets/images/tower.webp">
+            </div>
+            <div class="round hide" id="div7">
+                <p>1973</p><img src="assets/images/phone.webp">
+            </div>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
