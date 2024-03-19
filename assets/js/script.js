@@ -115,13 +115,13 @@ function selectNext() {
     }
 }
 
-//Gets current score and increase by 1
+//Gets current score and increase by 1, inspired by Love Math walkthrough
 function increaseRight() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
 
-//Gets current wrong score and increase by 1
+//Gets current wrong score and increase by 1, inspired by Love Math walkthrough
 function increaseWrong() {
     let oldScore = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++oldScore;
