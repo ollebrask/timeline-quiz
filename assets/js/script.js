@@ -22,6 +22,11 @@ beforeButton.addEventListener('click', selectBefore);
 afterButton.addEventListener('click', selectAfter);
 nextButton.addEventListener('click', selectNext);
 
+//to reload the page when clicking the retryButton
+retryButton.addEventListener('click', function() {
+    location.reload();
+});
+
 //Function for starting quiz. Code for shuffling and keeping track of question inspired by Web Dev Simplified.
 function startQuiz() {
     console.log('started');
@@ -101,7 +106,10 @@ function selectNext() {
         nextButton.classList.add('hide');
         retryButton.classList.remove('hide');
         beforeButton.classList.remove('wrong', 'correct');
+        beforeButton.classList.add('hide');
         afterButton.classList.remove('wrong', 'correct');
+        afterButton.classList.add('hide');
+        questionBoxElement.classList.add('hide');
     }
 }
 
