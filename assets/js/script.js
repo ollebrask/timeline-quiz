@@ -110,31 +110,31 @@ function revealTimeline(correctYear) {
 const questionsData = [{
         "question": "Motorola designed the world's first handheld mobile phone, but was the first official call made before or after 1950?",
         "correctYear": 1973,
-        "image": "assets/images/athletes.webp"
+        "image": "assets/images/phone.webp"
     },
     {
         "question": "The record company Columbia made a breakthrough when they launched the first LP. Was it before or after 1950?",
         "correctYear": 1948,
-        "image": "assets/images/athletes.webp"
+        "image": "assets/images/lp.webp"
     },
     {
         "question": "Guinness brewery made a big change, they began using nitrogen instead of carbon dioxide. But was it before or after 1950?",
         "correctYear": 1959,
-        "image": "assets/images/athletes.webp"
+        "image": "assets/images/beer.webp"
     },
     {
         "question": "Stockholms highest tower Kaknästornet has a restaurant 134 meter above ground. Was it built before or after 1950?",
         "correctYear": 1967,
-        "image": "assets/images/athletes.webp"
+        "image": "assets/images/tower.webp"
     },
     {
         "question": "The world's first electrical computer was 30 meters long. Was it built before or after 1950?",
         "correctYear": 1946,
-        "image": "assets/images/athletes.webp"
+        "image": "assets/images/computer.webp"
     },
     {
         "question": "The first ballpoint pen was a clear improvement over the ink pen. Was it invented before or after 1950?",
         "correctYear": 1938,
-        "image": "assets/images/athletes.webp"
+        "image": "assets/images/pen.webp"
     }
 ]
