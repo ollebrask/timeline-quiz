@@ -87,6 +87,11 @@ p {
     cursor: pointer;
 }
 
+/* When button is disabled, no pointer or changing color when hovered*/
+.btn:disabled:hover {
+    cursor: default;
+}
+
 .correct {
     background-color: green;
 }
@@ -94,6 +99,15 @@ p {
 .wrong {
     background-color: red;
 }
+
+.correct:hover {
+    background-color: green;
+}
+
+.wrong:hover {
+    background-color: red;
+}
+
 /* Style for the score-area*/
 .score-area {
     margin: 7px auto;

@@ -47,6 +47,10 @@ function showQuestion(question) {
 //Function for before-button
 function selectBefore() {
     console.log('Before');
+    //to make the button not clickable until next question
+    beforeButton.disabled = true;
+    afterButton.disabled = true;
+    //What happens if it is right/wrong
     if (shuffledQuestion[currentQuestion].correctYear < treshold) {
         increaseRight();
         beforeButton.classList.add('correct');
@@ -63,6 +67,10 @@ function selectBefore() {
 //Function for after-button
 function selectAfter() {
     console.log('After');
+    //to make the button not clickable until next question
+    beforeButton.disabled = true;
+    afterButton.disabled = true;
+    //What happens if it is right/wrong
     if (shuffledQuestion[currentQuestion].correctYear > treshold) {
         increaseRight();
         afterButton.classList.add('correct');
@@ -79,6 +87,9 @@ function selectAfter() {
 //Function for next-button
 function selectNext() {
     console.log('Next');
+    //to enable the before and after button again
+    beforeButton.disabled = false;
+    afterButton.disabled = false;
     currentQuestion++;
     if (currentQuestion < shuffledQuestion.length) {
         nextQuestion();
