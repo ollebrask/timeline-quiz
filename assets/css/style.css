@@ -9,6 +9,7 @@
     padding: 0;
 }
 
+/*General style for body*/
 body {
     background-color: #FFE8D1;
     text-align: center;
@@ -19,6 +20,7 @@ body {
     flex-direction: column;
 }
 
+/*Style for header*/
 .heading {
     font-family: "Rubik Dirt", system-ui;
     font-weight: 400;
@@ -27,6 +29,7 @@ body {
     margin-bottom: 5%;
 }
 
+/*Style for other text*/
 h2,
 h3,
 .btn,
@@ -37,6 +40,7 @@ p {
     font-style: normal;
 }
 
+/*The quiz container*/
 .game-area {
     background-color: #C4A18D;
     width: 70%;
@@ -49,6 +53,7 @@ p {
     box-shadow: 0 0 5px 2px;
 }
 
+/* For the image and text to be aligned*/
 .img-question {
     display: flex;
     flex-direction: column;
@@ -56,12 +61,14 @@ p {
     padding: 5%;
 }
 
+/* Image style*/
 .img-question img {
     width: 60%;
     max-width: 140px;
     padding-bottom: 5%;
 }
 
+/*Style for controls and buttons*/
 .controls {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -78,6 +85,7 @@ p {
     cursor: pointer;
 }
 
+/* Style for the score-area*/
 .score-area {
     margin: 7px auto;
     display: flex;
@@ -87,10 +95,12 @@ p {
     gap: 2px;
 }
 
+/* Hide for JS code*/
 .hide {
     display: none;
 }
 
+/*Style for the timeline*/
 .timeline {
     display: flex;
     justify-content: center;

@@ -7,8 +7,9 @@ const retryButton = document.getElementById('retry-btn');
 const questionBoxElement = document.getElementById('question-box');
 const questionElement = document.getElementById('question');
 const questionImg = document.getElementById('question-image');
+const informationText = document.getElementById('information');
 
-//variables for shuffling questions and keeping track of currentquestion.
+//Code for shuffling and keeping track of questions inspired by Web Dev Simplified.
 let shuffledQuestion;
 let currentQuestion;
 
@@ -21,17 +22,18 @@ beforeButton.addEventListener('click', selectBefore);
 afterButton.addEventListener('click', selectAfter);
 nextButton.addEventListener('click', selectNext);
 
-//functions
+//Function for starting quiz. Code for shuffling and keeping track of question inspired by Web Dev Simplified.
 function startQuiz() {
     console.log('started');
     startButton.classList.add('hide');
+    informationText.classList.add('hide');
     shuffledQuestion = questionsData.sort(() => Math.random() - .5);
     currentQuestion = 0;
     questionBoxElement.classList.remove('hide');
     nextQuestion();
 }
 
-//Function for shuffle the next question.
+//Function for shuffle the next question. Code inspired by Web Dev Simplified
 function nextQuestion() {
     showQuestion(shuffledQuestion[currentQuestion]);
 }

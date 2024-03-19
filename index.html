@@ -9,7 +9,9 @@
 </head>
 
 <body>
+    <!--Header-->
     <h1 class="heading">Timeline Quiz</h1>
+    <!--Game-Area where quiz is shown.-->
     <div class="game-area">
         <div class="hide" id="question-box">
             <div class="img-question">
@@ -21,19 +23,23 @@
                 <button class="btn" id="after-btn">After</button>
             </div>
         </div>
+        <!--Information about the quiz-->
         <div class="img-question" id="information">
             <p>Welcome! In this quiz you will be presented with 6 questions. Your job is to guess if the event happened before or after the year 1950. Are you ready?</p>
         </div>
+        <!--Buttons for start, next and retry-->
         <div class="controls">
             <button id="start-btn" class="btn">Start</button>
             <button id="next-btn" class="btn hide">Next</button>
             <button id="retry-btn" class="btn hide">Try again!</button>
         </div>
     </div>
+    <!--Text for keeping the score-->
     <div class="score-area">
         <p class="scores">Correct: <span id="score">0</span></p>
         <p class="scores">Wrong: <span id="wrong">0</span></p>
     </div>
+    <!--Timeline where years and pictures are shown-->
     <div class="timeline">
         <div class="left-group">
             <div class="round hide" id="div1">
