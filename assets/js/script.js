@@ -1,4 +1,4 @@
-// buttons
+// variables
 const startButton = document.getElementById('start-btn');
 const beforeButton = document.getElementById('before-btn');
 const afterButton = document.getElementById('after-btn');
@@ -8,6 +8,7 @@ const questionBoxElement = document.getElementById('question-box');
 const questionElement = document.getElementById('question');
 const questionImg = document.getElementById('question-image');
 const informationText = document.getElementById('information');
+const retryText = document.getElementById('retry');
 
 //Code for shuffling and keeping track of questions inspired by Web Dev Simplified.
 let shuffledQuestion;
@@ -23,7 +24,7 @@ afterButton.addEventListener('click', selectAfter);
 nextButton.addEventListener('click', selectNext);
 
 //to reload the page when clicking the retryButton
-retryButton.addEventListener('click', function() {
+retryButton.addEventListener('click', function () {
     location.reload();
 });
 
@@ -110,6 +111,7 @@ function selectNext() {
         afterButton.classList.remove('wrong', 'correct');
         afterButton.classList.add('hide');
         questionBoxElement.classList.add('hide');
+        retryText.classList.remove('hide');
     }
 }
 
