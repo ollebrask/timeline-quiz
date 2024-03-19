@@ -83,10 +83,14 @@ function selectNext() {
     if (currentQuestion < shuffledQuestion.length) {
         nextQuestion();
         nextButton.classList.add('hide');
+        beforeButton.classList.remove('wrong', 'correct');
+        afterButton.classList.remove('wrong', 'correct');
     } else {
         console.log('End of quiz');
         nextButton.classList.add('hide');
         retryButton.classList.remove('hide');
+        beforeButton.classList.remove('wrong', 'correct');
+        afterButton.classList.remove('wrong', 'correct');
     }
 }
 
