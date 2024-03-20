@@ -13,67 +13,76 @@
 
 <body>
     <!--Header-->
-    <h1 class="heading">Timeline Quiz</h1>
-    <!--Game-Area where quiz is shown.-->
-    <div class="game-area">
-        <div class="hide" id="question-box">
-            <div class="img-question">
-                <img id="question-image" src="" alt="Question Image">
-                <div id="question">Question</div>
+    <header>
+        <h1 class="heading">Timeline Quiz</h1>
+    </header>
+    <!--Main content-->
+    <main>
+        <!--Game-Area where quiz is shown.-->
+        <section class="game-area">
+            <div class="hide" id="question-box">
+                <div class="img-question">
+                    <img id="question-image" src="" alt="Question Image">
+                    <div id="question">Question</div>
+                </div>
+                <div id="answer-btns">
+                    <button class="btn" id="before-btn">Before</button>
+                    <button class="btn" id="after-btn">After</button>
+                </div>
             </div>
-            <div id="answer-btns">
-                <button class="btn" id="before-btn">Before</button>
-                <button class="btn" id="after-btn">After</button>
+            <!--Information about the quiz-->
+            <div class="img-question" id="information">
+                <p>Welcome! In this quiz you will be presented with 6 questions. Your job is to guess if the event
+                    happened
+                    before or after the year 1950. Are you ready?</p>
             </div>
+            <div class="img-question hide" id="retry">
+                <p>Good job! You made it through the quiz.</p>
+            </div>
+            <!--Buttons for start, next and retry-->
+            <div class="controls">
+                <button id="start-btn" class="btn">Start</button>
+                <button id="next-btn" class="btn hide">Next</button>
+                <button id="retry-btn" class="btn hide">Try again!</button>
+            </div>
+        </section>
+        <!--Text for keeping the score-->
+        <div class="score-area hide">
+            <p class="scores">Correct: <span id="score">0</span></p>
+            <p class="scores">Wrong: <span id="wrong">0</span></p>
         </div>
-        <!--Information about the quiz-->
-        <div class="img-question" id="information">
-            <p>Welcome! In this quiz you will be presented with 6 questions. Your job is to guess if the event happened
-                before or after the year 1950. Are you ready?</p>
-        </div>
-        <div class="img-question hide" id="retry">
-            <p>Good job! You made it through the quiz.</p>
-        </div>
-        <!--Buttons for start, next and retry-->
-        <div class="controls">
-            <button id="start-btn" class="btn">Start</button>
-            <button id="next-btn" class="btn hide">Next</button>
-            <button id="retry-btn" class="btn hide">Try again!</button>
-        </div>
-    </div>
-    <!--Text for keeping the score-->
-    <div class="score-area">
-        <p class="scores">Correct: <span id="score">0</span></p>
-        <p class="scores">Wrong: <span id="wrong">0</span></p>
-    </div>
-    <!--Timeline where years and pictures are shown-->
-    <div class="timeline">
-        <div class="left-group">
-            <div class="round hide" id="div1">
-                <p>1938</p><img src="assets/images/pen.webp" alt="Picture of a ball-marker pen">
+        <!--Timeline where years and pictures are shown-->
+        <section class="timeline hide">
+            <div class="left-group">
+                <div class="round hide" id="div1">
+                    <p>1938</p><img src="assets/images/pen.webp" alt="Picture of a ball-marker pen">
+                </div>
+                <div class="round hide" id="div2">
+                    <p>1946</p><img src="assets/images/computer.webp" alt="Picture of the first electronical computer">
+                </div>
+                <div class="round hide" id="div3">
+                    <p>1948</p><img src="assets/images/lp.webp" alt="Picture of an LP-record">
+                </div>
             </div>
-            <div class="round hide" id="div2">
-                <p>1946</p><img src="assets/images/computer.webp" alt="Picture of the first electronical computer">
+            <div class="threshold">
+                <p>1950</p>
             </div>
-            <div class="round hide" id="div3">
-                <p>1948</p><img src="assets/images/lp.webp" alt="Picture of an LP-record">
+            <div class="right-group">
+                <div class="round hide" id="div5">
+                    <p>1959</p><img src="assets/images/beer.webp" alt="Picture of a beer">
+                </div>
+                <div class="round hide" id="div6">
+                    <p>1967</p><img src="assets/images/tower.webp" alt="Picture of a tower">
+                </div>
+                <div class="round hide" id="div7">
+                    <p>1973</p><img src="assets/images/phone.webp" alt="Picture of an old phone">
+                </div>
             </div>
-        </div>
-        <div class="threshold">
-            <p>1950</p>
-        </div>
-        <div class="right-group">
-            <div class="round hide" id="div5">
-                <p>1959</p><img src="assets/images/beer.webp" alt="Picture of a beer">
-            </div>
-            <div class="round hide" id="div6">
-                <p>1967</p><img src="assets/images/tower.webp" alt="Picture of a tower">
-            </div>
-            <div class="round hide" id="div7">
-                <p>1973</p><img src="assets/images/phone.webp" alt="Picture of an old phone">
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2024 Olle Brask</p>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 

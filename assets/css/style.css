@@ -20,6 +20,14 @@ body {
     flex-direction: column;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 /*Style for header*/
 .heading {
     font-family: "Rubik Dirt", system-ui;
@@ -119,11 +127,6 @@ p {
     gap: 2px;
 }
 
-/* Hide for JS code*/
-.hide {
-    display: none;
-}
-
 /*Style for the timeline*/
 .timeline {
     display: flex;
@@ -157,12 +160,17 @@ p {
     width: 25px;
 }
 
+/* Hide for JS code*/
+.hide {
+    display: none;
+}
+
 /* Media query: Tablets and larger 768px */
 @media screen and (min-width: 768px) {
 
     .heading {
-        margin-top: 2%;
-        margin-bottom: 2%;
+        margin-top: 10%;
+        margin-bottom: 10%;
         font-size: 300%;
     }
 
