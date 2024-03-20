@@ -10,6 +10,7 @@ const questionImg = document.getElementById('question-image');
 const informationText = document.getElementById('information');
 const retryText = document.getElementById('retry');
 const timeline = document.getElementById('timeline');
+const scoreArea = document.getElementById('score-area');
 
 //Code for shuffling and keeping track of questions inspired by Web Dev Simplified.
 let shuffledQuestion;
@@ -30,8 +31,8 @@ retryButton.addEventListener('click', function () {
 });
 
 /** Function for starting quiz.
-*Code for shuffling and keeping track of question inspired by Web Dev Simplified.
-*/
+ *Code for shuffling and keeping track of question inspired by Web Dev Simplified.
+ */
 function startQuiz() {
     console.log('started');
     startButton.classList.add('hide');
@@ -40,12 +41,13 @@ function startQuiz() {
     currentQuestion = 0;
     questionBoxElement.classList.remove('hide');
     timeline.classList.remove('hide');
+    scoreArea.classList.remove('hide');
     nextQuestion();
 }
 
 /** Function for shuffle the next question.
-* Code inspired by Web Dev Simplified
-*/
+ * Code inspired by Web Dev Simplified
+ */
 function nextQuestion() {
     showQuestion(shuffledQuestion[currentQuestion]);
 }
@@ -58,9 +60,9 @@ function showQuestion(question) {
 }
 
 /**Function for before-button
-* if correct increaseRight and make green
-* if wrong increaseWrong and make red
-*/
+ * if correct increaseRight and make green
+ * if wrong increaseWrong and make red
+ */
 function selectBefore() {
     console.log('Before');
     //to make the button not clickable until next question
@@ -81,9 +83,9 @@ function selectBefore() {
 }
 
 /**Function for after-button
-* if correct increaseRight and make green
-* if wrong increaseWrong and make red
-*/
+ * if correct increaseRight and make green
+ * if wrong increaseWrong and make red
+ */
 function selectAfter() {
     console.log('After');
     //to make the button not clickable until next question
@@ -106,7 +108,7 @@ function selectAfter() {
 /**Function for next-button
  * if there are questions left, nextQuestion
  * if end of quiz show retry-button
-*/
+ */
 function selectNext() {
     console.log('Next');
     //to enable the before and after button again
@@ -132,21 +134,21 @@ function selectNext() {
 }
 
 /**Gets current score and increase by 1, inspired by Love Math walkthrough
-*/
+ */
 function increaseRight() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
 
 /**Gets current wrong score and increase by 1, inspired by Love Math walkthrough
-*/
+ */
 function increaseWrong() {
     let oldScore = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++oldScore;
 }
 
 /**Function for revealing the correct year and picture on timeline.
-*/
+ */
 function revealTimeline(correctYear) {
     //select all div in both left and right group.
     const timelineDivs = document.querySelectorAll('.timeline .left-group div, .timeline .right-group div');
