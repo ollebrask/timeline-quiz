@@ -126,6 +126,7 @@ function selectAfter() {
 function selectNext() {
     console.log('Next');
     //to enable the before and after button again
+    questionCount();
     beforeButton.disabled = false;
     afterButton.disabled = false;
     currentQuestion++;
@@ -152,6 +153,11 @@ function selectResult() {
     retryText.classList.remove('hide');
 }
 
+/** Function to increase the questionCounter, inspired by Love Math walkthrough */
+function questionCount() {
+    let questionNumber = parseInt(document.getElementById("count-qst").innerText);
+    document.getElementById("count-qst").innerText = ++questionNumber;
+}
 /**Gets current score and increase by 1, inspired by Love Math walkthrough
  */
 function increaseRight() {

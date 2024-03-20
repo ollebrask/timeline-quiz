@@ -77,6 +77,14 @@ p {
     box-shadow: 0 0 5px 2px;
 }
 
+.counting-qst {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2px;
+    padding-top: 2px;
+    font-size: 80%;
+}
+
 /*Style for controls and buttons*/
 .controls {
     padding-top: 5%;
