@@ -41,7 +41,7 @@ function startQuiz() {
     console.log('started');
     startButton.classList.add('hide');
     informationText.classList.add('hide');
-    shuffledQuestion = questionsData.sort(() => Math.random() - .5);
+    shuffledQuestion = questionsData.sort(() => Math.random() - Math.random());
     currentQuestion = 0;
     questionBoxElement.classList.remove('hide');
     timeline.classList.remove('hide');
