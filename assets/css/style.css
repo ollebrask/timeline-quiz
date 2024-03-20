@@ -160,6 +160,12 @@ p {
     width: 25px;
 }
 
+/* Footer style*/
+footer {
+    margin-top: 5%;
+    font-size: 70%;
+}
+
 /* Hide for JS code*/
 .hide {
     display: none;
@@ -201,6 +207,10 @@ p {
     .left-group,
     .right-group {
         font-size: 70%;
+    }
+
+    footer {
+        margin-top: 1%;
     }
 }
 
