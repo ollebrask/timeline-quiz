@@ -3,6 +3,7 @@ const startButton = document.getElementById('start-btn');
 const beforeButton = document.getElementById('before-btn');
 const afterButton = document.getElementById('after-btn');
 const nextButton = document.getElementById('next-btn');
+const resultButton = document.getElementById('result-btn');
 const retryButton = document.getElementById('retry-btn');
 const questionBoxElement = document.getElementById('question-box');
 const questionElement = document.getElementById('question');
@@ -24,6 +25,7 @@ startButton.addEventListener('click', startQuiz);
 beforeButton.addEventListener('click', selectBefore);
 afterButton.addEventListener('click', selectAfter);
 nextButton.addEventListener('click', selectNext);
+resultButton.addEventListener('click', selectResult);
 
 //to reload the page when clicking the retryButton
 retryButton.addEventListener('click', function () {
@@ -79,7 +81,13 @@ function selectBefore() {
         afterButton.classList.add('correct');
     }
     revealTimeline(shuffledQuestion[currentQuestion].correctYear);
-    nextButton.classList.remove('hide');
+
+    //Check if its the last question
+    if (currentQuestion === shuffledQuestion.length - 1) {
+        resultButton.classList.remove('hide');
+    } else {
+        nextButton.classList.remove('hide');
+    }
 }
 
 /**Function for after-button
@@ -102,7 +110,13 @@ function selectAfter() {
         beforeButton.classList.add('correct');
     }
     revealTimeline(shuffledQuestion[currentQuestion].correctYear);
+    
+    //Check if its the last question
+    if (currentQuestion === shuffledQuestion.length - 1) {
+        resultButton.classList.remove('hide');
+    } else {
     nextButton.classList.remove('hide');
+    }
 }
 
 /**Function for next-button
@@ -120,17 +134,22 @@ function selectNext() {
         nextButton.classList.add('hide');
         beforeButton.classList.remove('wrong', 'correct');
         afterButton.classList.remove('wrong', 'correct');
-    } else {
-        console.log('End of quiz');
-        nextButton.classList.add('hide');
-        retryButton.classList.remove('hide');
-        beforeButton.classList.remove('wrong', 'correct');
-        beforeButton.classList.add('hide');
-        afterButton.classList.remove('wrong', 'correct');
-        afterButton.classList.add('hide');
-        questionBoxElement.classList.add('hide');
-        retryText.classList.remove('hide');
-    }
+    } 
+}
+
+/** Function for revealing the results
+ */
+function selectResult() {
+    console.log('End of quiz');
+    nextButton.classList.add('hide');
+    retryButton.classList.remove('hide');
+    beforeButton.classList.remove('wrong', 'correct');
+    beforeButton.classList.add('hide');
+    afterButton.classList.remove('wrong', 'correct');
+    afterButton.classList.add('hide');
+    questionBoxElement.classList.add('hide');
+    resultButton.classList.add('hide');
+    retryText.classList.remove('hide');
 }
 
 /**Gets current score and increase by 1, inspired by Love Math walkthrough
