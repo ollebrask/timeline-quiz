@@ -9,6 +9,7 @@ const questionElement = document.getElementById('question');
 const questionImg = document.getElementById('question-image');
 const informationText = document.getElementById('information');
 const retryText = document.getElementById('retry');
+const timeline = document.getElementById('timeline');
 
 //Code for shuffling and keeping track of questions inspired by Web Dev Simplified.
 let shuffledQuestion;
@@ -36,6 +37,7 @@ function startQuiz() {
     shuffledQuestion = questionsData.sort(() => Math.random() - .5);
     currentQuestion = 0;
     questionBoxElement.classList.remove('hide');
+    timeline.classList.remove('hide');
     nextQuestion();
 }
 
