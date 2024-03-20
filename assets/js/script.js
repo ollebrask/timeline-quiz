@@ -12,6 +12,8 @@ const informationText = document.getElementById('information');
 const retryText = document.getElementById('retry');
 const timeline = document.getElementById('timeline');
 const scoreArea = document.getElementById('score-area');
+//select all div in both left and right group.
+const timelineDivs = document.querySelectorAll('.timeline .left-group div, .timeline .right-group div');
 
 //Code for shuffling and keeping track of questions inspired by Web Dev Simplified.
 let shuffledQuestion;
@@ -175,9 +177,6 @@ function increaseWrong() {
 /**Function for revealing the correct year and picture on timeline.
  */
 function revealTimeline(correctYear) {
-    //select all div in both left and right group.
-    const timelineDivs = document.querySelectorAll('.timeline .left-group div, .timeline .right-group div');
-
     //search through the divs to match with correct year and remove hide. break when done
     for (let i = 0; i < timelineDivs.length; i++) {
         if (parseInt(timelineDivs[i].innerText) === correctYear) {
