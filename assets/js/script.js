@@ -29,7 +29,9 @@ retryButton.addEventListener('click', function () {
     location.reload();
 });
 
-//Function for starting quiz. Code for shuffling and keeping track of question inspired by Web Dev Simplified.
+/** Function for starting quiz.
+*Code for shuffling and keeping track of question inspired by Web Dev Simplified.
+*/
 function startQuiz() {
     console.log('started');
     startButton.classList.add('hide');
@@ -41,18 +43,24 @@ function startQuiz() {
     nextQuestion();
 }
 
-//Function for shuffle the next question. Code inspired by Web Dev Simplified
+/** Function for shuffle the next question.
+* Code inspired by Web Dev Simplified
+*/
 function nextQuestion() {
     showQuestion(shuffledQuestion[currentQuestion]);
 }
 
-//To show the question
+/** Function to show the question.
+ */
 function showQuestion(question) {
     questionElement.innerText = question.question;
     questionImg.src = question.image;
 }
 
-//Function for before-button
+/**Function for before-button
+* if correct increaseRight and make green
+* if wrong increaseWrong and make red
+*/
 function selectBefore() {
     console.log('Before');
     //to make the button not clickable until next question
@@ -72,7 +80,10 @@ function selectBefore() {
     nextButton.classList.remove('hide');
 }
 
-//Function for after-button
+/**Function for after-button
+* if correct increaseRight and make green
+* if wrong increaseWrong and make red
+*/
 function selectAfter() {
     console.log('After');
     //to make the button not clickable until next question
@@ -92,7 +103,10 @@ function selectAfter() {
     nextButton.classList.remove('hide');
 }
 
-//Function for next-button
+/**Function for next-button
+ * if there are questions left, nextQuestion
+ * if end of quiz show retry-button
+*/
 function selectNext() {
     console.log('Next');
     //to enable the before and after button again
@@ -117,19 +131,22 @@ function selectNext() {
     }
 }
 
-//Gets current score and increase by 1, inspired by Love Math walkthrough
+/**Gets current score and increase by 1, inspired by Love Math walkthrough
+*/
 function increaseRight() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
 
-//Gets current wrong score and increase by 1, inspired by Love Math walkthrough
+/**Gets current wrong score and increase by 1, inspired by Love Math walkthrough
+*/
 function increaseWrong() {
     let oldScore = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++oldScore;
 }
 
-//Function for revealing the correct year and picture on timeline.
+/**Function for revealing the correct year and picture on timeline.
+*/
 function revealTimeline(correctYear) {
     //select all div in both left and right group.
     const timelineDivs = document.querySelectorAll('.timeline .left-group div, .timeline .right-group div');
