@@ -110,12 +110,12 @@ function selectAfter() {
         beforeButton.classList.add('correct');
     }
     revealTimeline(shuffledQuestion[currentQuestion].correctYear);
-    
+
     //Check if its the last question
     if (currentQuestion === shuffledQuestion.length - 1) {
         resultButton.classList.remove('hide');
     } else {
-    nextButton.classList.remove('hide');
+        nextButton.classList.remove('hide');
     }
 }
 
@@ -135,7 +135,7 @@ function selectNext() {
         nextButton.classList.add('hide');
         beforeButton.classList.remove('wrong', 'correct');
         afterButton.classList.remove('wrong', 'correct');
-    } 
+    }
 }
 
 /** Function for revealing the results
