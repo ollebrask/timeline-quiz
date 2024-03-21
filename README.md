@@ -120,17 +120,19 @@ The user should be able to:
 
 ### Typography
 
+[Google fonts](https://fonts.google.com/) was used for the fonts on the website.
 
-![Main Font](documentation/font.png)
+![Header font](documentation/rubikdirt-font.png)
 
-- Bebas Neue Google Font was used as the main font.
+- Rubik Dirt font was used for header.
+
+![Header font](documentation/roboto-font.png)
+
+- Roboto font was used for rest of the text.
 
 
-### Wireframes
-- [Home Page](documentation/index-wireframe.png)
-- [Services](documentation/services-wireframe.png)
-- [Contact Page](documentation/contact-wireframe.png)
-- [Response Page](documentation/response-wireframe.png)
+### Wireframe
+- [Wireframe](documentation/wireframe.png)
 
 ---
 
@@ -162,8 +164,9 @@ In your IDE Terminal, type the following command to clone my repository:
 ---
 
 ## Future improvements
-- I will make back-end programming for the form on the Contact us page.
+- I will make the "Try again" button reset the score and take you back to beginning instead of just refreshing the page.
 - I will make a 404 error page for the website.
+- I will put the questions and answers to a seperate javascript file.
 
 ---
 ## Credits
@@ -171,12 +174,13 @@ In your IDE Terminal, type the following command to clone my repository:
 + #### Content
 
     - The structure of the README/TESTING file came from my mentor Iuliia Konovalova's Animal Shelter Project [Animal Shelter README](https://github.com/IuliiaKonovalova/animal_shelter/blob/main/README.md)
-    - Inspiration for the shuffling question and keeping track of current question from Web Dev Simplified YouTube page.
+    - Inspiration for the shuffling question and keeping track of current question from Web Dev Simplified YouTube page. [Quiz tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1007s).
     - Inspiration for the counter came from the Code Institutes: Love Math Walkthrough Project.
 
 + #### Media
 
-    - All the images for the website were generated with [Adobe Firefly](https://adobe.com/products/firefly.html/).
+    - Generating images with [Adobe Firefly](https://adobe.com/products/firefly.html/).
+    - Getting images from [Mostphotos](https://www.mostphotos.com/). 
     - The images were optimized with [Birme](https://www.birme.net).
 
 + #### Other
@@ -189,5 +193,5 @@ In your IDE Terminal, type the following command to clone my repository:
 
 - [Iuliia Konovalova](https://github.com/IuliiaKonovalova) my mentor, thank you for your support with VS Code and feedback during the project.
 - [Kevin Powell](https://www.youtube.com/user/KepowOb) for his flexbox tutorials.
-
-- My friend Pontus Karlström, who recently started the Cinnova company and let me use his company as my first project.
+- My dear friend [Google](https://www.google.com) for always being ready to find answers.
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) for good tutorials and inspiration.
