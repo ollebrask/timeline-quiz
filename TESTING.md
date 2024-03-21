@@ -103,5 +103,6 @@ In order to confirm the correct functionality, responsiveness, and appearance:
     - I tried to apply .hide to .timeline section. It didn't work because .hide was above .timeline in the css code.
 + ### Unsolved bugs
     - None.
-
++ ### Mistakes
+    - When I was done with the TESTING file I started with the README. When I was almost done I noticed that I'd been overwriting everything in the TESTING file. I had pushed to GitHub earlier so I could get almost everything I wrote from there.
 ---
