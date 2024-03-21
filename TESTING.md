@@ -68,51 +68,39 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 ---
 ## Validator testing
 + ### HTML
-  #### Home Page
-    - No errors or warnings were found when passing through the official W3C validator.
+    No errors or warnings were found when passing through the official W3C validator.
 
 
-    ![Home Page HTML Validator](documentation/index-html-val.png)
+    ![HTML Validator](documentation/html-val.png)
     
  
     
 + ### CSS
-  No errors or warnings were found when passing through the official W3C (Jigsaw) validator:
+    No errors or warnings were found when passing through the official W3C (Jigsaw) validator:
     
 
-  ![CSS Validator](documentation/css-val.png)
+    ![CSS Validator](documentation/css-val.png)
+
+
++ ### JSHINT
+    No errors or warnings were found when passing through the official W3C (Jigsaw) validator:
+    
+
+    ![JSHint](documentation/jshint-val.png)
   
  
 
 + ## LightHouse report
 
-    - Using lighthouse in devtools I confirmed that the website is performing well, accessible and colors and fonts chosen are readable.
-    
-  ### Home page
+    - Using lighthouse in devtools I confirmed that the website is performing well.
 
-  ![Home Page Lighthouse](documentation/index-lighthouse.png)
+  ![Lighthouse](documentation/lighthouse.png)
 
-  ### Services page
-
-  ![Gallery Page Lighthouse](documentation/services-lighthouse.png)
-
-  ### Contact page
-
-  ![Contact Page Lighthouse](documentation/contact-lighthouse.png)
-
-  ### Response page
-
-  ![Response Page Lighthouse](documentation/response-lighthouse.png)
 
 ---
 + ### Bugs
-    - I had some horizontal overflow on the Contact us page. I had forgot to create style for parent containers: width: 100%, display: flex etc.
-    - When i tried to make underline for current pages in the navigation bar it didn't because of other code overwriting the style. I had to use an !important tag to make it work.
+    - The function revealTimeline didn't work. That was because because I did not have correctYear inside the parantheses. It's needed to define what year the function is looking for.
+    - I tried to apply hide to .timeline section. It didn't work because the .hide code was above the .timeline code in the css file.
 + ### Unsolved bugs
     - None.
-+ ### Mistakes
-    - I added the images and started coding before optimizing them for a website.
-    This gave the website a very low score in Performance in the lighthouse-report.
-    Afterwards I changed the images to .webp, and that enhanced the result but I also need to resize the images.
-
 ---
