@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // variables
 const startButton = document.getElementById('start-btn');
 const beforeButton = document.getElementById('before-btn');
