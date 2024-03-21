@@ -219,4 +219,4 @@ const questionsData = [{
         "correctYear": 1938,
         "image": "assets/images/pen.webp"
     }
-]
+];
