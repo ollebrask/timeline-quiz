@@ -160,6 +160,7 @@ p {
 
 .threshold {
     margin-top: 2%;
+    font-size: 65%;
 }
 
 .round img {
@@ -217,6 +218,10 @@ footer {
         font-size: 70%;
     }
 
+    .threshold {
+        font-size: 80%;
+    }
+
     footer {
         margin-top: 1%;
     }
@@ -257,6 +262,6 @@ footer {
     }
 
     .threshold {
-        font-size: 140%;
+        font-size: 100%;
     }
 }
