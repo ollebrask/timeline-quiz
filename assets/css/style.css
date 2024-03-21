@@ -14,6 +14,7 @@ body {
     background-color: #FFE8D1;
     text-align: center;
     width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +23,7 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex: 1 0 auto;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -171,7 +172,8 @@ p {
 
 /* Footer style*/
 footer {
-    margin-top: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 70%;
 }
 
@@ -184,8 +186,8 @@ footer {
 @media screen and (min-width: 768px) {
 
     .heading {
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         font-size: 300%;
     }
 
@@ -220,10 +222,6 @@ footer {
 
     .threshold {
         font-size: 80%;
-    }
-
-    footer {
-        margin-top: 1%;
     }
 }
 
