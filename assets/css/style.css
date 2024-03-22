@@ -227,6 +227,7 @@ footer {
 
 /* Media query: Laptops and larger 992px */
 @media screen and (min-width: 992px) {
+    
     .heading {
         font-size: 350%;
     }
