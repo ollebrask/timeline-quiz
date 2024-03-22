@@ -97,6 +97,7 @@ The user should be able to:
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - was used to add the functions for the site
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items on the pages.
 - [Balsamiq](https://balsamiq.com/) was used to make wireframe for the website.
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
