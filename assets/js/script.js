@@ -166,6 +166,7 @@ function questionCount() {
     let questionNumber = parseInt(document.getElementById("count-qst").innerText);
     document.getElementById("count-qst").innerText = ++questionNumber;
 }
+
 /**
  * Gets current score and increase by 1, inspired by Love Math walkthrough
  */
