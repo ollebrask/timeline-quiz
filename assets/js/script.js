@@ -41,7 +41,6 @@ retryButton.addEventListener('click', function () {
  * Code for shuffling and keeping track of question inspired by Web Dev Simplified.
  */
 function startQuiz() {
-    console.log('started');
     startButton.classList.add('hide');
     informationText.classList.add('hide');
     shuffledQuestion = questionsData.sort(() => Math.random() - Math.random());
@@ -74,7 +73,6 @@ function showQuestion(question) {
  * if wrong increaseWrong and make red
  */
 function selectBefore() {
-    console.log('Before');
     //to make the button not clickable until next question
     beforeButton.disabled = true;
     afterButton.disabled = true;
@@ -104,7 +102,6 @@ function selectBefore() {
  * if wrong increaseWrong and make red
  */
 function selectAfter() {
-    console.log('After');
     //to make the button not clickable until next question
     beforeButton.disabled = true;
     afterButton.disabled = true;
@@ -134,7 +131,6 @@ function selectAfter() {
  * if end of quiz show retry-button
  */
 function selectNext() {
-    console.log('Next');
     //to enable the before and after button again
     questionCount();
     beforeButton.disabled = false;
@@ -152,7 +148,6 @@ function selectNext() {
  * Function for revealing the results
  */
 function selectResult() {
-    console.log('End of quiz');
     nextButton.classList.add('hide');
     retryButton.classList.remove('hide');
     beforeButton.classList.remove('wrong', 'correct');
