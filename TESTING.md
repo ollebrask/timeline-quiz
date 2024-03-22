@@ -44,25 +44,25 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 | feature | action | expected result | tested | passed | comments |
 | --- | --- | --- | --- | --- | --- |
 | Start | | | | | |
-| Start | Click on the "Start" button | First random question is displayed | Yes | Yes | - |
-| Start | Click on the "Start" button | Question number 1/6 is displayed | Yes | Yes | - |
-| Start | Click on the "Start" button | Correct/wrong answers is displayed | Yes | Yes | - |
-| Start | Click on the "Start" button | Timeline is displayed | Yes | Yes | - |
+|  | Click on the "Start" button | First random question is displayed | Yes | Yes | - |
+|  | Click on the "Start" button | Question number 1/6 is displayed | Yes | Yes | - |
+|  | Click on the "Start" button | Correct/wrong answers is displayed | Yes | Yes | - |
+|  | Click on the "Start" button | Timeline is displayed | Yes | Yes | - |
 | Before/After | | | | | |
-| Before/After | Click on the "Before" or "After" button | The correct button turns green | Yes | Yes | - |
-| Before/After | Click on the "Before" or "After" button | The incorrect button turns green | Yes | Yes | - |
-| Before/After | Click on the "Before" or "After" button | The Correct/Wrong score is increased by 1 | Yes | Yes | - |
-| Before/After | Click on the "Before" or "After" button | The image and correct year is displayed in the timeline | Yes | Yes | - |
-| Before/After | Click on the "Before" or "After" button | If there are questions left, next button is displayed | Yes | Yes | - |
-| Before/After | Click on the "Before" or "After" button | If all questions have displayed, see result button is displayed | Yes | Yes | - |
+|  | Click on the "Before" or "After" button | The correct button turns green | Yes | Yes | - |
+|  | Click on the "Before" or "After" button | The incorrect button turns green | Yes | Yes | - |
+|  | Click on the "Before" or "After" button | The Correct/Wrong score is increased by 1 | Yes | Yes | - |
+|  | Click on the "Before" or "After" button | The image and correct year is displayed in the timeline | Yes | Yes | - |
+|  | Click on the "Before" or "After" button | If there are questions left, next button is displayed | Yes | Yes | - |
+|  | Click on the "Before" or "After" button | If all questions have displayed, see result button is displayed | Yes | Yes | - |
 | Next | | | | | |
-| Next | Click on the "Next" button | Next random question is displayed | Yes | Yes | - |
-| Next | Click on the "Next" button | Question number is increased by 1 | Yes | Yes | - |
+|  | Click on the "Next" button | Next random question is displayed | Yes | Yes | - |
+|  | Click on the "Next" button | Question number is increased by 1 | Yes | Yes | - |
 | Result | | | | | |
-| Result | Click on the "See results" button | Summary text is displayed | Yes | Yes | - |
-| Result | Click on the "See results" button | Retry button is displayed | Yes | Yes | - |
-| Retry | | | | | |
-| Result | Click on the "Try again" button | Page is refreshed | Yes | Yes | - |
+|  | Click on the "See results" button | Summary text is displayed | Yes | Yes | - |
+|  | Click on the "See results" button | Retry button is displayed | Yes | Yes | - |
+|  | | | | | |
+|  | Click on the "Try again" button | Page is refreshed | Yes | Yes | - |
 
 
 ---
