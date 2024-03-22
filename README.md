@@ -166,7 +166,7 @@ In your IDE Terminal, type the following command to clone my repository:
 ## Future improvements
 - I will make the "Try again" button reset the score and take you back to beginning instead of just refreshing the page.
 - I will make a 404 error page for the website.
-- I will put the questions and answers to a seperate javascript file.
+- I will put the questions and answers to a separate javascript file.
 
 ---
 ## Credits
@@ -185,7 +185,7 @@ In your IDE Terminal, type the following command to clone my repository:
 
 + #### Other
 
-    - Github was used to store my repository and for free deployments. [GitHub](https://github.com)
+    - Github and Github pages were used to store my repository and for free deployments. [GitHub](https://github.com)
     - Visual Studio Code was used as code editor. [Visual Studio Code](https://code.visualstudio.com)    
 ---
 
