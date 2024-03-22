@@ -100,9 +100,9 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 ---
 + ### Bugs
     - The function revealTimeline didn't work. That was because inside of the parantheses i didn't write correctYear. It is needed to define what the the function is looking for.
-    - I tried to apply .hide to .timeline section. It didn't work because .hide was above .timeline in the css code.
+    - I wasn't able to hide the timeline at the beginning of the quiz. I solved this by moving the .hide underneath .timeline in the css file.
 + ### Unsolved bugs
     - None.
 + ### Mistakes
-    - When I was done with the TESTING file I started with the README. When I was almost done I noticed that I'd been overwriting everything in the TESTING file. I had pushed to GitHub earlier so I could get almost everything I wrote from there.
+    - The TESTING file was accidentally overwritten. I had earlier pushed the files so I was able to recover most of the code.
 ---

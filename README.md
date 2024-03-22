@@ -85,6 +85,7 @@ The user should be able to:
 + #### Footer
 
     - A centered text showing: Copyright 2024 Olle Brask
+    - The footer is shown at the bottom of the page. (Edited after the images was added)
 
     
     ![Question](documentation/footer.png)
